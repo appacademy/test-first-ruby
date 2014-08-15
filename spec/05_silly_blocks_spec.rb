@@ -4,7 +4,6 @@
 # * closures
 # * yield
 # * loops
-#
 
 require "05_silly_blocks"
 

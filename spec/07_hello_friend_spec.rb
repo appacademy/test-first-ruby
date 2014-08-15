@@ -23,7 +23,8 @@
 #     undefined method `greeting' for #<Friend:0x1180f3c>
 #     ./friend_spec.rb:5:
 #
-# This means that while it found the file, and it found the class, it couldn't find the method named "greeting".
+# This means that while it found the file, and it found the class, it
+# couldn't find the method named "greeting".
 #
 # ## Define the "greeting" method
 #
@@ -43,11 +44,14 @@
 #          got: nil (using ==)
 #     ./friend_spec.rb:5:
 #
-# This means that there is a method, but it's not returning anything! ("nil" is the Ruby way of saying "not anything".)
+# This means that there is a method, but it's not returning anything!
+# ("nil" is the Ruby way of saying "not anything".)
 #
 # ## Make it return something
 #
-# Inside the "greeting" method, put a single line containing a string that is *not* "Hello!". (Here we are simulating you making an honest mistake, so we can see what the error message looks like.)
+# Inside the "greeting" method, put a single line containing a string
+# that is *not* "Hello!". (Here we are simulating you making an honest
+# mistake, so we can see what the error message looks like.)
 #
 #     def greeting
 #       "whuh?"
@@ -64,7 +68,8 @@
 #          got: "whuh?" (using ==)
 #     ./friend_spec.rb:5:
 #
-# Correct this by changing "whuh?" to "Hello!". Save it. Run the test again.
+# Correct this by changing "whuh?" to "Hello!". Save it. Run the test
+# again.
 #
 # ## Watch it pass!
 #
@@ -78,15 +83,16 @@
 #
 # Fix the next failure! :-)
 #
-# Hint 1: in order to get the next test to pass, you will need to pass a *parameter*:
+# Hint 1: in order to get the next test to pass, you will need to pass
+# a *parameter*:
 #
 #     def greeting(who)
 #
-# Hint 2: once you do that, the **first** test might start failing again. To fix both at the same time, you need to provide a **default value** for that parameter:
+# Hint 2: once you do that, the **first** test might start failing
+# again. To fix both at the same time, you need to provide a **default
+# value** for that parameter:
 #
 #     def greeting(who = nil)
-#
-#
 
 require "07_hello_friend"
 

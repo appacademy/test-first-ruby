@@ -17,21 +17,23 @@
 #
 # # Warning
 #
-# You may not have enough knowledge yet to complete `sum`. You will probably
-# need to use **loops** (e.g. `while`) or **iterators** (e.g. `each`) to
-# get the tests to pass.
+# You may not have enough knowledge yet to complete `sum`. You will
+# probably need to use **loops** (e.g. `while`) or **iterators**
+# (e.g. `each`) to get the tests to pass.
 #
 # # Bonus
 #
-# There are also some bonus exercises for when you finish the regular ones. The bonus round will help teach you test-driven *development*, not simply test-guided *learning*.
+# There are also some bonus exercises for when you finish the regular
+# ones. The bonus round will help teach you test-driven *development*,
+# not simply test-guided *learning*.
 #
-# Your mission, should you choose to accept it, is to write *tests* for three new methods:
+# Your mission, should you choose to accept it, is to write *tests*
+# for three new methods:
 #
 # * `multiply` which multiplies two numbers together
 # * `power` which raises one number to the power of another number
-# * `[factorial](http://en.wikipedia.org/wiki/Factorial)` (check Wikipedia if you forgot your high school math).
-#
-#
+# * `[factorial](http://en.wikipedia.org/wiki/Factorial)` (check
+#   Wikipedia if you forgot your high school math).
 
 require "02_calculator"
 

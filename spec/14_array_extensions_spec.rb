@@ -4,7 +4,6 @@
 #
 # * objects, methods, classes
 # * reopening classes
-#
 
 require "14_array_extensions" # we don't call it "array.rb" since that would be confusing
 

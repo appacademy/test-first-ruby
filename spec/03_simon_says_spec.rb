@@ -8,8 +8,8 @@
 #
 # ## Hints
 #
-# When you make the second `repeat` test pass, you might break the **first**
-#
+# When you make the second `repeat` test pass, you might break the
+# **first**
 
 require "03_simon_says"
 

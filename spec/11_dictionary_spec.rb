@@ -4,7 +4,6 @@
 # * Array
 # * instance variables
 # * regular expressions
-#
 
 require '11_dictionary'
 
