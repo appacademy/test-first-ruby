@@ -17,7 +17,7 @@
 #
 #
 
-require "pig_latin"
+require "04_pig_latin"
 
 describe "#translate" do
 

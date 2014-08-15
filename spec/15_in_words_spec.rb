@@ -18,7 +18,7 @@
 # The number 4 is of class `FixNum` and it has methods on it.  Your challenge is to add an `in_words` method to `FixNum`.
 #
 
-require "in_words"
+require "15_in_words"
 
 describe Fixnum do
 

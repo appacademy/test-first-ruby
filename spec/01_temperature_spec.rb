@@ -15,7 +15,7 @@
 #    1.0 / 2.0 => 0.5
 #
 
-require "temperature"
+require "01_temperature"
 
 describe "temperature conversion functions" do
 
