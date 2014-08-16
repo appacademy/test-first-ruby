@@ -2,38 +2,15 @@
 #
 # This lab teaches basic Ruby function syntax.
 #
-# ## Open a terminal in this directory
-#
-#     cd 00_hello
-#
-# This directory is the starting point for this exercise. It contains
-# a spec file and you'll be adding a ruby file to (eventually) make
-# the specs pass.
-#
 # ## Run the test
 #
-#     rake
+# bundle exec rspec spec/00_hello_spec.rb
 #
 # ## Watch it fail
 #
 # You should see an error. **Don't get scared!** Try to read it and
 # figure out what the computer wants to tell you. Somewhere on the
 # first line it should say something like
-#
-#     no such file to load -- test-first-teaching/hello/hello (LoadError)
-#
-# That means that it is looking for a file called `hello.rb` and can't
-# find it.
-#
-# ## Create hello.rb
-#
-# Open up `hello.rb` in a text editor. Save it. Run the test again.
-#
-#     rake
-#
-# ## Watch it fail
-#
-# Now you should see an error like this:
 #
 #     the hello function
 #       says hello (FAILED - 1)
@@ -48,7 +25,7 @@
 #
 # ## Create the hello function
 #
-# Fix this by opening `hello.rb` and creating an empty function:
+# Fix this by opening `lib/00_hello.rb` and creating an empty function:
 #
 #     def hello
 #     end
