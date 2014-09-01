@@ -105,6 +105,7 @@ describe RPNCalculator do
     calculator.times
     calculator.value.should == (1+2)*3
 
+    @calculator = RPNCalculator.new
     # 1 2 3 * + => 1 + (2 * 3)
     calculator.push(1)
     calculator.push(2)
