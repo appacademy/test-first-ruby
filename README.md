@@ -2,13 +2,12 @@
 
 ## Setup
 
-* Install Ruby
-    * You will need Ruby, Bundler, and RSpec
-    * We recommend using [rbenv](https://github.com/sstephenson/rbenv)
-    * We officially support Ruby 2.1.2
-* Open a terminal window. (On Mac OS X you can use the `Terminal` app.)
-* Navigate to the test-first-ruby directory.
-* Install RSpec: `bundle install`.
+If you've already setup ruby, you may skip this step. Otherwise,
+please see the [setup instructions][setup] document.
+
+**Note**: You'll need to create a new project. **Where it says "Source URL" paste
+in https://github.com/appacademy/test-first-ruby**.
+
 
 ## Using These Exercises
 
