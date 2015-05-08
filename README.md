@@ -8,6 +8,7 @@ please see the [setup instructions][setup] document.
 **Note**: You'll need to create a new project. **Where it says "Source URL" paste
 in https://github.com/appacademy/test-first-ruby**.
 
+[setup]: https://github.com/appacademy/prep-work/blob/master/coding-test-1/setup.md
 
 ## Using These Exercises
 
