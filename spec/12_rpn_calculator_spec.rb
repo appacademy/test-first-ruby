@@ -45,7 +45,6 @@
 require "12_rpn_calculator"
 
 describe RPNCalculator do
-
   attr_accessor :calculator
 
   before do
@@ -56,7 +55,7 @@ describe RPNCalculator do
     calculator.push(2)
     calculator.push(3)
     calculator.plus
-    calculator.value.should == 5
+    expect(calculator.value).to eq(5)
   end
 
   it "adds three numbers" do
@@ -64,16 +63,16 @@ describe RPNCalculator do
     calculator.push(3)
     calculator.push(4)
     calculator.plus
-    calculator.value.should == 7
+    expect(calculator.value).to eq(7)
     calculator.plus
-    calculator.value.should == 9
+    expect(calculator.value).to eq(9)
   end
 
   it "subtracts the second number from the first number" do
     calculator.push(2)
     calculator.push(3)
     calculator.minus
-    calculator.value.should == -1
+    expect(calculator.value).to eq(-1)
   end
 
   it "adds and subtracts" do
@@ -81,9 +80,9 @@ describe RPNCalculator do
     calculator.push(3)
     calculator.push(4)
     calculator.minus
-    calculator.value.should == -1
+    expect(calculator.value).to eq(-1)
     calculator.plus
-    calculator.value.should == 1
+    expect(calculator.value).to eq(1)
   end
 
   it "multiplies and divides" do
@@ -91,9 +90,9 @@ describe RPNCalculator do
     calculator.push(3)
     calculator.push(4)
     calculator.divide
-    calculator.value.should == (3.0 / 4.0)
+    expect(calculator.value).to eq((3.0 / 4.0))
     calculator.times
-    calculator.value.should == 2.0 * (3.0 / 4.0)
+    expect(calculator.value).to eq(2.0 * (3.0 / 4.0))
   end
 
   it "resolves operator precedence unambiguously" do
@@ -103,7 +102,7 @@ describe RPNCalculator do
     calculator.plus
     calculator.push(3)
     calculator.times
-    calculator.value.should == (1+2)*3
+    expect(calculator.value).to eq((1+2)*3)
 
     @calculator = RPNCalculator.new
     # 1 2 3 * + => 1 + (2 * 3)
@@ -112,7 +111,7 @@ describe RPNCalculator do
     calculator.push(3)
     calculator.times
     calculator.plus
-    calculator.value.should == 1+(2*3)
+    expect(calculator.value).to eq(1+(2*3))
   end
 
   it "fails informatively when there's not enough values stacked away" do
@@ -135,23 +134,27 @@ describe RPNCalculator do
 
   # extra credit
   it "tokenizes a string" do
-    calculator.tokens("1 2 3 * + 4 5 - /").should ==
+    expect(calculator.tokens("1 2 3 * + 4 5 - /")).to eq(
       [1, 2, 3, :*, :+, 4, 5, :-, :/]
+    )
   end
 
   # extra credit
   it "evaluates a string" do
-    calculator.evaluate("1 2 3 * +").should ==
+    expect(calculator.evaluate("1 2 3 * +")).to eq(
       ((2 * 3) + 1)
+    )
 
-    calculator.evaluate("4 5 -").should ==
+    expect(calculator.evaluate("4 5 -")).to eq(
       (4 - 5)
+    )
 
-    calculator.evaluate("2 3 /").should ==
+    expect(calculator.evaluate("2 3 /")).to eq(
       (2.0 / 3.0)
+    )
 
-    calculator.evaluate("1 2 3 * + 4 5 - /").should ==
+    expect(calculator.evaluate("1 2 3 * + 4 5 - /")).to eq(
       (1.0 + (2 * 3)) / (4 - 5)
+    )
   end
-
 end
