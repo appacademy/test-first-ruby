@@ -28,11 +28,11 @@ describe XmlDocument do
   end
 
   it "renders a tag with attributes" do
-    expect(@xml.hello(:name => 'dolly')).to eq("<hello name='dolly'/>")
+    expect(@xml.hello(:name => "dolly")).to eq('<hello name="dolly"/>')
   end
 
   it "renders a randomly named tag" do
-    tag_name = (1..8).map{|i| ('a'..'z').to_a[rand(26)]}.join
+    tag_name = (1..8).map{|i| ("a".."z").to_a[rand(26)]}.join
     expect(@xml.send(tag_name)).to eq("<#{tag_name}/>")
   end
 
@@ -55,7 +55,7 @@ describe XmlDocument do
       end
     end
 
-    expect(xml_string).to eq("<hello><goodbye><come_back><ok_fine be='that_way'/></come_back></goodbye></hello>")
+    expect(xml_string).to eq('<hello><goodbye><come_back><ok_fine be="that_way"/></come_back></goodbye></hello>')
   end
 
   it "indents" do
@@ -73,7 +73,7 @@ describe XmlDocument do
       "<hello>\n" +
       "  <goodbye>\n" +
       "    <come_back>\n" +
-      "      <ok_fine be='that_way'/>\n" +
+      "      <ok_fine be=\"that_way\"/>\n" +
       "    </come_back>\n" +
       "  </goodbye>\n" +
       "</hello>\n"

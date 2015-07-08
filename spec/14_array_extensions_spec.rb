@@ -22,7 +22,7 @@ describe Array do
     end
   end
 
-  describe '#square' do
+  describe "#square" do
     it "does nothing to an empty array" do
       expect([].square).to eq([])
     end
@@ -32,7 +32,7 @@ describe Array do
     end
   end
 
-  describe '#square!' do
+  describe "#square!" do
     it "squares each element of the original array" do
       array = [1,2,3]
       array.square!
