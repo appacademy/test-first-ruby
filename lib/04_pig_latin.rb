@@ -11,6 +11,5 @@ def translate(phrase)
 		word = word + "ay"
 		arr.length == 0 ? arr << word : arr << " " + word
 	end
-
 	arr.join()
 end
