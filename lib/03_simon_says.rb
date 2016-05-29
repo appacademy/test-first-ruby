@@ -21,6 +21,8 @@ end
 def titleize(phrase)
   little_words = %w(and over the a)
   arr = phrase.split
-  arr.each { |word| word[0] = word[0].upcase unless little_words.include?(word) && word != arr.first}
+  arr.each do |word| 
+    word[0] = word[0].upcase unless little_words.include?(word) && word != arr.first
+  end
   arr.join(" ")
 end
