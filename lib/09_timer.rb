@@ -5,15 +5,11 @@ class Timer
   end
 
   def format(num)
-    p num
     if num == 0
-      p "zero"
       "00"
     elsif num < 10
-      p "one"
       "0#{num}"
     else
-      p "other"
       "#{num}"
     end
   end
