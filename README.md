@@ -5,7 +5,7 @@
 If you've already setup ruby, you may skip this step. Otherwise,
 please see the [setup instructions][setup] document.
 
-**Note**: You'll need to create a new project. **Where it says "Source URL" paste
+**Note**: You'll need to create a new project. **In Cloud9, where it says "Clone from Git or Mercurial URL", paste
 in https://github.com/appacademy/test-first-ruby**.
 
 [setup]: http://prepwork.appacademy.io/coding-test-1/setup
