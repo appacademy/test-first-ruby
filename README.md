@@ -1,17 +1,20 @@
 # Learn Ruby Test-First
 
-## Setup
+## Ruby Setup
 
 If you've already set up ruby, you may skip this step. Otherwise,
 please see the [setup instructions][setup] document.
 
-**Note**: If you're using Cloud9, you'll need to create a new project. 
+[setup]: http://prepwork.appacademy.io/coding-test-1/setup
+
+## Setting up the Project
+
+If you're using Cloud9, you'll need to create a new project. 
 **On the project creation page, where it says "Clone from Git or Mercurial URL", paste
 in https://github.com/appacademy/test-first-ruby**.
 
-If you're working locally, download a .zip version of this repository by clicking the "Clone or Download" button in the top right on GitHub. Open the directory in your favorite text editor (we recommend [Atom][atom]).
+If you're working locally, download a .zip version of this repository by clicking the "Clone or Download" button in the top right on GitHub. Open the directory in your favorite text editor (we recommend [Atom][atom]) and run your commands at the command line.
 
-[setup]: http://prepwork.appacademy.io/coding-test-1/setup
 [atom]: https://atom.io/
 
 ## Using These Exercises
