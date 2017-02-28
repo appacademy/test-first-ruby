@@ -1,23 +1,32 @@
 # Learn Ruby Test-First
 
-## Setup
+## Ruby Setup
 
-If you've already setup ruby, you may skip this step. Otherwise,
+If you've already set up ruby, you may skip this step. Otherwise,
 please see the [setup instructions][setup] document.
 
-**Note**: You'll need to create a new project. **Where it says "Source URL" paste
+[setup]: http://prepwork.appacademy.io/coding-test-1/setup
+
+## Setting up the Project
+
+If you're using Cloud9, you'll need to create a new project. 
+**On the project creation page, where it says "Clone from Git or Mercurial URL", paste
 in https://github.com/appacademy/test-first-ruby**.
 
-[setup]: http://prepwork.appacademy.io/coding-test-1/setup
+If you're working locally, download a .zip version of this repository by clicking the "Clone or Download" button in the top right on GitHub. Open the directory in your favorite text editor (we recommend [Atom][atom]) and run your commands at the command line.
+
+[atom]: https://atom.io/
 
 ## Using These Exercises
 
 Each exercise has its own spec file in the `spec` directory. Open the
-spec file in your favorite text editor to read the directions (we
-recommend [Atom](https://atom.io/)).
-
-Each exercise will have you modify a corresponding file in the `lib`
+spec file to read the directions. Each exercise will have you modify a corresponding file in the `lib`
 directory.
+
+To run the specs, you'll need to install RSpec. First, run `gem install bundler` in the root directory of your project. Then, run `bundle install`. To run a single spec file, run a command like this: `bundle exec rspec spec/00_hello_spec.rb`. To run all of the specs at once, run `bundle exec rspec`.
+
+**What's happening here?** 
+In the root directory of the project, you'll see a file called "Gemfile". This is a manifest of all of the Ruby gems needed to make your project work. `bundle install` is a command you'll use often to install all of the gems you need to run a program. `gem install bundler` installs the bundler gem, which is what makes `bundle install` work. `bundle exec rspec` simply tells your machine to run the version of RSpec specified in the Gemfile.
 
 # Resources
 
