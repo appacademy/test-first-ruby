@@ -2,18 +2,13 @@
 
 ## Ruby Setup
 
-If you've already set up ruby, you may skip this step. Otherwise,
-please see the [setup instructions][setup] document.
+If you've already set up ruby on your own machine, you may skip this step. Otherwise, please see the [advanced setup instructions][setup] document.
 
 [setup]: http://prepwork.appacademy.io/coding-test-1/setup
 
 ## Setting up the Project
 
-If you're using Cloud9, you'll need to create a new project. 
-**On the project creation page, where it says "Clone from Git or Mercurial URL", paste
-in https://github.com/appacademy/test-first-ruby**.
-
-If you're working locally, download a .zip version of this repository by clicking the "Clone or Download" button in the top right on GitHub. Open the directory in your favorite text editor (we recommend [Atom][atom]) and run your commands at the command line.
+You can download a .zip version of this repository by clicking the "Clone or Download" button in the top right on GitHub. Open the directory in your favorite text editor (we recommend [Atom][atom]) and run your commands at the command line.
 
 [atom]: https://atom.io/
 
