@@ -14,11 +14,13 @@ describe "Timer" do
     @timer = Timer.new
   end
 
-  it "should initialize to 0 seconds" do
-    expect(@timer.seconds).to eq(0)
+  describe "Class" do
+    it "should initialize to 0 seconds" do
+      expect(@timer.seconds).to eq(0)
+    end
   end
 
-  describe "time_string" do
+  describe "#time_string" do
     it "should display 0 seconds as 00:00:00" do
       @timer.seconds = 0
       expect(@timer.time_string).to eq("00:00:00")

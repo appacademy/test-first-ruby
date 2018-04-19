@@ -13,8 +13,8 @@
 
 require "03_simon_says"
 
-describe "Simon says" do
-  describe "echo" do
+describe "Simon Says" do
+  describe "#echo" do
     it "should echo hello" do
       expect(echo("hello")).to eq("hello")
     end
@@ -24,7 +24,7 @@ describe "Simon says" do
     end
   end
 
-  describe "shout" do
+  describe "#shout" do
     it "should shout hello" do
       expect(shout("hello")).to eq("HELLO")
     end
@@ -34,7 +34,7 @@ describe "Simon says" do
     end
   end
 
-  describe "repeat" do
+  describe "#repeat" do
     it "should repeat" do
       expect(repeat("hello")).to eq("hello hello")
     end
@@ -48,7 +48,7 @@ describe "Simon says" do
     end
   end
 
-  describe "start_of_word" do
+  describe "#start_of_word" do
     it "returns the first letter" do
       expect(start_of_word("hello", 1)).to eq("h")
     end
@@ -65,7 +65,7 @@ describe "Simon says" do
     end
   end
 
-  describe "first_word" do
+  describe "#first_word" do
     it "tells us the first word of 'Hello World' is 'Hello'" do
       expect(first_word("Hello World")).to eq("Hello")
     end
@@ -75,7 +75,7 @@ describe "Simon says" do
     end
   end
 
-  describe "titleize" do
+  describe "#titleize" do
     it "capitalizes a word" do
       expect(titleize("jaws")).to eq("Jaws")
     end

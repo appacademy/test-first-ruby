@@ -7,8 +7,8 @@
 
 require "05_silly_blocks"
 
-describe "some silly block functions" do
-  describe "reverser" do
+describe "Silly Blocks" do
+  describe "#reverser" do
     it "reverses the string returned by the default block" do
       result = reverser do
         "hello"
@@ -26,7 +26,7 @@ describe "some silly block functions" do
     end
   end
 
-  describe "adder" do
+  describe "#adder" do
     it "adds one to the value returned by the default block" do
       expect(adder { 5 }).to eq(6)
     end
@@ -36,7 +36,7 @@ describe "some silly block functions" do
     end
   end
 
-  describe "repeater" do
+  describe "#repeater" do
     it "executes the default block" do
       block_was_executed = false
 
